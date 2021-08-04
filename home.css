@@ -1,0 +1,485 @@
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+font-family:Helvetica;
+  background-color:black;
+  color:white;
+}
+
+
+/* NAVBAR WHOLE */
+nav{
+
+  text-align:center;
+
+}
+#logo{
+  margin: 0 auto;
+  height: 2rem;
+  font-size: 2rem;
+  margin:2rem 0 2rem 0;
+}
+nav ul{
+margin: 0 auto;
+list-style:none;
+padding:0;
+}
+nav ul li{
+font-size: 1.5rem;
+margin: 0 0 0.5rem 0;
+}
+nav ul a{
+text-decoration:none;
+color:white;
+}
+@media (min-width:640px)
+{
+  nav{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:5rem;
+    align-items: center;
+  }
+
+
+  #logo{
+    margin:0;
+    margin-right:2rem;
+  }
+  nav ul{
+    display:flex;
+    float:right;
+  }
+  nav ul li{
+    margin: 0 1rem 0 0;
+  }
+}
+/* LANDING PAGE */
+#landing_page{
+  margin-top:5rem;
+}
+#Line1{
+  font-size: 3rem;
+  font-weight:normal;
+}
+#line1 span{
+  display:none;
+}
+.about-text{
+  text-align:center;
+}
+#line2 {
+  opacity:60%;
+  font-size:1.5rem;
+  font-weight:normal;
+  margin-top:-1rem;
+}
+.about-para{
+  text-align:center;
+  font-style: italic;
+  font-size:1.5rem;
+}
+.about-para span{
+  opacity:60%;
+}
+@keyframes sloww{
+
+     0%{color:black;}
+
+   50%{color:white;}
+
+   100%{color:black;}
+}
+@media (min-width:640px){
+  #landing_page{
+    display:flex;
+    height:40rem;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:0px;
+  }
+  .about-text{
+    text-align:left;
+    margin-left:4rem;
+    margin-right:1rem;
+  }
+
+  #line1 span{
+ display:inline;
+ color:black;
+
+  }
+  #Line1 span:hover
+   {
+     animation:sloww 4s ease infinite;
+     animation-fill-mode: forwards;
+   }
+
+  .about-para{
+    font-size:2rem;
+    margin-right:4rem;
+    margin-left:1rem;
+  }
+  .about-para:hover{
+    font-size:2.2rem;
+  }
+}
+
+
+/* ABOUT ME PAGE */
+#about_me{
+  margin-top:10rem;
+}
+#aboutimg{
+  display:none;
+}
+.aboutmebox{
+  text-align:center;
+  margin:1rem;
+}
+#line4{
+    font-size:2rem;
+    margin:3rem 0 0 0;
+}
+#line4para{
+  font-size:1.5rem;
+  opacity:60%;
+}
+#line4para:hover{
+  opacity:100%;
+}
+#biobullets{
+  list-style:none;
+  font-size:1.5rem;
+  opacity:60%;
+}
+#biobullets:hover{
+  opacity:100%;
+}
+#biobullets li{
+  margin: 1rem;
+}
+@media (min-width:640px)
+{
+#about_me{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5rem;
+}
+#aboutimg{
+  display:block;
+  margin-left: 10rem;
+  transform: scale(0.75);
+}
+#aboutimg img{
+  border-radius:5px;
+}
+.aboutmebox{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  margin-top:0;
+}
+
+#line4{
+font-size:2rem;
+}
+
+#line4para{
+  margin: 0 auto;
+  width:80%;
+  margin-top:2rem;
+  text-align:center:;
+  font-size:1.5rem;
+}
+
+#biobullets{
+  font-size:1.5rem;
+}
+
+}
+/* RESUME PART */
+
+#resume
+{
+  margin-top:10rem;
+}
+#education
+{
+  text-align: center;
+}
+#experience
+{
+  text-align:center;
+  margin-top:10rem;
+}
+.years{
+  font-weight:bold;
+}
+.college{
+  opacity:60%;
+  font-size:1.2rem;
+  font-weight:bold;
+}
+#resumetags
+{
+  font-size:2rem;
+  font-weight:bold;
+}
+#exbox,#edbox{
+font-size: 1.5rem;
+}
+@media (min-width:640px)
+{
+#resume{
+  display:flex;
+  justify-content:space-around;
+  align-items:stretch;
+}
+#experience
+{
+  text-align:center;
+  margin:0;
+}
+.college:hover{
+  font-size:1.5rem;
+}
+}
+/*   SERVICES PAGEEEEEEE */
+#services{
+  margin-top:5rem;
+}
+#service_title{
+  text-align:center;
+}
+#servicehead{
+  font-size:2rem;
+  font-weight:bold;
+}
+#servicetag{
+  font-size:1.5rem;
+}
+#service_tiles
+{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin-top:5rem;
+}
+#service1
+{
+  height:240px;
+  width:210px;
+  background-color:rgb(240, 243, 245);
+  margin:0 auto;
+  margin-bottom:1rem;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  border-radius: 10px;
+
+}
+#service1:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#service1 img{
+transform:scale(0.2);
+margin-top:-10rem;
+}
+#service1 p{
+  color:black;
+  margin-top:-10rem;
+  font-weight:bold;
+}
+#service2
+{
+  height:240px;
+  width:210px;
+  background-color:rgb(240, 243, 245);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  border-radius: 10px;
+  margin-top:4rem;
+}
+#service2:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#service2 img{
+  transform:scale(0.475);
+  margin-top:0;
+}
+#service2 p{
+  color:black;
+  margin-top:-2rem;
+  font-weight:bold;
+}
+@media (min-width:640px){
+#services{
+  margin-top:13rem;
+}
+#servicetag{
+  max-width:40%;
+  margin:0 auto;
+}
+  #service_tiles
+  {
+    flex-direction:row;
+    margin-top:10rem;
+  }
+  #service2{
+    margin-top:0rem;
+  }
+}
+/* CONTACT ME PAGEEEEE */
+#contact_me{
+  text-align:center;
+}
+#contacthead{
+  font-size:2rem;
+  font-weight:bold;
+}
+#contacttag{
+  font-size:1.5rem;
+}
+#contact_tiles{
+  margin-top:5rem;
+}
+
+#contact1{
+  height:300px;
+  width:250px;
+  background-color:rgb(240, 243, 245);
+  border-radius:5px;
+  margin:0 auto;
+  margin-bottom: 2rem;
+  display:flex;
+  flex-direction:column;
+}
+#contact1:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#contact1 p{
+  color:black;
+  margin-top:-2rem;
+  font-weight:bold;
+}
+#contact1 img{
+transform:scale(0.25);
+margin-top:-3rem;
+}
+#contact2{
+  height:300px;
+  width:250px;
+  background-color:rgb(240, 243, 245);
+  border-radius:5px;
+  margin:0 auto;
+  margin-bottom: 2rem;
+  display:flex;
+  flex-direction:column;
+}
+#contact2:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#contact2 p{
+  color:black;
+  font-weight:bold;
+}
+#contact2 img{
+  transform:scale(0.25);
+  margin-top:-3rem;
+}
+#contact3{
+  height:300px;
+  width:250px;
+  background-color:rgb(240, 243, 245);
+  border-radius:5px;
+  margin:0 auto;
+  margin-bottom:2rem;
+  display:flex;
+  flex-direction:column;
+}
+#contact3:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#contact3 p{
+  color:black;
+  font-weight:bold;
+}
+#contact3 img{
+  transform:scale(0.25);
+  margin-top:-3rem;
+}
+#contact4{
+  height:300px;
+  width:250px;
+  background-color:rgb(240, 243, 245);
+  border-radius:5px;
+  margin:0 auto;
+  margin-bottom:2rem;
+  display:flex;
+  flex-direction:column;
+}
+#contact4:hover{
+    filter:drop-shadow(0px 0px 20px grey);
+}
+#contact4 p{
+  color:black;
+  font-weight:bold;
+}
+#contact4 img{
+  transform:scale(0.25);
+  margin-top:-3rem;
+}
+.boxtext{
+  color:black;
+  width:80%;
+  margin:0 auto;
+}
+.boxtext a{
+  text-decoration:none;
+  color:black;
+
+}
+
+@media (min-width:640px){
+  #contact_me{
+    margin-top:13rem;
+  }
+#contact_tiles{
+  display:flex;
+}
+#contact1,#contact2,#contact3,#contact4{
+  margin-right:2rem;
+}
+#contacttag{
+  width:60%;
+  margin: 0 auto;
+}
+}
+/* THANK YOU SECTION  */
+#thankyou
+{
+  float:right;
+}
+#line a{
+  text-decoration:none;
+  color:white;
+}
+#line span{
+  color:red;
+}
+@keyframes restate{
+  0%{color:white;}
+  25%{color:rgb(207, 29, 73);}
+  50%{color:red;}
+  75%{color:rgb(207, 29, 73);}
+  100%{color:white;}
+}
+#line span{
+  animation:restate 2s infinite;
+}
